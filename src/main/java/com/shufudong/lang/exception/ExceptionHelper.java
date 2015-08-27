@@ -1,11 +1,3 @@
-/**   
-* @Title:       [中]ExceptionHelper.java 
-* @Package      [中]com.shufudong.lang.exception 
-* @Description: [中]异常的辅助类.
-* @author       [中]shufudong
-* @date         [中]2015年8月27日 下午9:47:59 
-* @version      [中]V1.0   
-*/ 
 package com.shufudong.lang.exception;
 
 import java.io.PrintStream;
@@ -20,7 +12,7 @@ import java.util.List;
  * @ClassName:      [中]ExceptionHelper 
  * @Description:    [中]异常的辅助类.
  * @author          [中]ShuFuDong
- * @date            [中]2015年8月27日 下午9:47:59 
+ * @date            [中]2015年2月27日 下午9:47:59 
  */
 public class ExceptionHelper {
     
@@ -44,7 +36,6 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Title: getThrowable 
     * @Description:         [中]从<code>ChainedThrowable</code>实例中取得<code>Throwable</code>对象.
     * @param throwable      [中]<code>ChainedThrowable</code>实例
     * @return Throwable     [中]<code>Throwable</code>对象
@@ -59,7 +50,6 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Title: getChainedThrowable 
     * @Description: [中]将<code>Throwable</code>转换成<code>ChainedThrowable</code>. 如果已经是
     * <code>ChainedThrowable</code>了, 则直接返回, 否则将它包装在
     * <code>ChainedThrowableDelegate</code>中返回.
@@ -75,7 +65,6 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Title: getChainedThrowableCause 
     * @Description: [中]取得被代理的异常的起因, 如果起因不是<code>ChainedThrowable</code>, 则用
     * <code>ChainedThrowableDelegate</code>包装并返回.
     * 
@@ -87,7 +76,6 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Title: printStackTrace 
     * @Description:         [中]打印调用栈到标准错误.
     * @param throwable      [中]异常
     */
@@ -96,7 +84,6 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Title: printStackTrace 
     * @Description:     [中]打印调用栈到指定输出流.
     * @param throwable  [中]异常
     * @param stream     [中]输出字节流
@@ -106,7 +93,6 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Title: printStackTrace 
     * @Description:     [中]打印调用栈到指定输出流.
     * @param throwable  [中]异常
     * @param writer     [中]输出字符流
@@ -123,8 +109,7 @@ public class ExceptionHelper {
         }
     }
     
-    /** 
-    * @Title: printStackTraceRecursive 
+    /**  
     * @Description:         [中]递归地打印所有异常链的调用栈.
     * @param throwable      [中]异常
     * @param writer         [中]输出流
@@ -154,7 +139,6 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Title: printThrowableMessage 
     * @Description:     [中]打印异常的message.
     * @param throwable  [中]异常
     * @param writer     [中]输出流
@@ -175,7 +159,6 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Title: analyzeStackTrace 
     * @Description: 	[中]分析异常的调用栈, 取得当前异常的信息, 不包括起因异常的信息.
     * @param throwable  [中]取得指定异常的调用栈
     * @return			[中]调用栈数组
@@ -206,7 +189,7 @@ public class ExceptionHelper {
     * @ClassName: 	[中]StackTraceAnalyzer 
     * @Description: [中]分析stack trace的辅助类.
     * @author 		[中]ShuFuDong
-    * @date 		[中]2015年8月27日 下午10:30:09 
+    * @date 		[中]2015年2月27日 下午10:30:09 
     */ 
     private static class StackTraceAnalyzer {
         private Throwable throwable;

@@ -1,12 +1,4 @@
-/**   
-* @Title:       [中]ChainedThrowable.java 
-* @Package      [中]com.shufudong.lang.exception 
-* @Description: [中]实现此接口的异常, 是由另一个异常引起的.
-* @author       [中]ShuFuDong
-* @date         [中]2015年2月27日 下午9:50:51 
-* @version      [中]V1.0   
-*/ 
-package com.shufudong.lang.exception;
+ package com.shufudong.lang.exception;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;

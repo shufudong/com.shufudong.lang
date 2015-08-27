@@ -1,11 +1,3 @@
-/**   
-* @Title:       [中]ExceptionUtil.java 
-* @Package      [中]com.shufudong.lang 
-* @Description: [中]处理异常的工具类。
-* @author       [中]ShuFuDong
-* @date         [中]2015年8月27日 下午11:03:01 
-* @version      [中]V1.0   
-*/ 
 package com.shufudong.lang;
 
 import java.io.PrintWriter;

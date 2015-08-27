@@ -1,11 +1,3 @@
-/**   
- * @Title: [中]StringUtil.java 
- * @Package [中]com.shufudong.httpclient.util 
- * @Description: [中]TODO(用一句话描述该文件做什么) 
- * @author [中]Maven
- * @date [中]2015年8月27日 上午2:19:53 
- * @version [中]V1.0   
- */
 package com.shufudong.lang;
 
 import java.util.ArrayList;
@@ -13,50 +5,37 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @ClassName: [中]StringUtil
- * @Description: [中]有关字符串处理的工具类。
- *               <p>
- *               [中]这个类中的每个方法都可以“安全”地处理<code>null</code>，而不会抛出
- *               <code>NullPointerException</code>。
- *               </p>
- * @author [中]Maven
- * @date [中]2015年8月27日 上午2:19:53
- * 
- *       [中]
+ * @ClassName:      [中]StringUtil
+ * @Description:    [中]有关字符串处理的工具类。
+ * <p>[中]这个类中的每个方法都可以“安全”地处理<code>null</code>，而不会抛出<code>NullPointerException</code>。</p>
+ * @author          [中]Maven
+ * @date            [中]2015年8月27日 上午2:19:53
  */
 public class StringUtil {
-    /*
+    
+    /**
      * ==========================================================================
-     * ==
-     */
-    /* 常量和singleton。 */
-    /*
+     * 常量和singleton。
      * ==========================================================================
-     * ==
      */
-
-    /** 空字符串。 */
+    /** 
+    * @Fields EMPTY_STRING : [中]空字符串。
+    */
     public static final String EMPTY_STRING = "";
     
     public static final boolean esapiCanonicalizeStrict = false;
 
-    /*
-     * ==========================================================================
-     * ==
-     */
-    /* 判空函数。 */
-    /*                                                                              */
-    /* 以下方法用来判定一个字符串是否为： */
-    /* 1. null */
-    /* 2. empty - "" */
-    /* 3. blank - "全部是空白" - 空白由Character.isWhitespace所定义。 */
-    /*
-     * ==========================================================================
-     * ==
-     */
-
     /**
-     * 检查字符串是否为<code>null</code>或空字符串<code>""</code>。
+     * ==========================================================================
+     * 判空函数。 
+     * 以下方法用来判定一个字符串是否为： 
+     * 1. null 
+     * 2. empty - "" 
+     * 3. blank - "全部是空白" - 空白由Character.isWhitespace所定义。
+     * ==========================================================================
+     */
+    /**
+     * @Description:    [中]检查字符串是否为<code>null</code>或空字符串<code>""</code>。
      * 
      * <pre>
      * StringUtil.isEmpty(null)      = true
@@ -66,17 +45,15 @@ public class StringUtil {
      * StringUtil.isEmpty("  bob  ") = false
      * </pre>
      * 
-     * @param str
-     *            要检查的字符串
-     * 
-     * @return 如果为空, 则返回<code>true</code>
+     * @param str       [中]要检查的字符串
+     * @return          [中]如果为空, 则返回<code>true</code>
      */
     public static boolean isEmpty(String str) {
         return ((str == null) || (str.length() == 0));
     }
 
     /**
-     * 检查字符串是否不是<code>null</code>和空字符串<code>""</code>。
+     * @Description:    [中]检查字符串是否不是<code>null</code>和空字符串<code>""</code>。
      * 
      * <pre>
      * StringUtil.isEmpty(null)      = false
@@ -86,17 +63,15 @@ public class StringUtil {
      * StringUtil.isEmpty("  bob  ") = true
      * </pre>
      * 
-     * @param str
-     *            要检查的字符串
-     * 
-     * @return 如果不为空, 则返回<code>true</code>
+     * @param str       [中]要检查的字符串
+     * @return          [中]如果不为空, 则返回<code>true</code>
      */
     public static boolean isNotEmpty(String str) {
         return ((str != null) && (str.length() > 0));
     }
 
     /**
-     * 检查字符串是否是空白：<code>null</code>、空字符串<code>""</code>或只有空白字符。
+     * @Description:    [中]检查字符串是否是空白：<code>null</code>、空字符串<code>""</code>或只有空白字符。
      * 
      * <pre>
      * StringUtil.isBlank(null)      = true
@@ -106,10 +81,8 @@ public class StringUtil {
      * StringUtil.isBlank("  bob  ") = false
      * </pre>
      * 
-     * @param str
-     *            要检查的字符串
-     * 
-     * @return 如果为空白, 则返回<code>true</code>
+     * @param str       [中]要检查的字符串
+     * @return          [中]如果为空白, 则返回<code>true</code>
      */
     public static boolean isBlank(String str) {
         int length;
@@ -128,7 +101,7 @@ public class StringUtil {
     }
 
     /**
-     * 检查字符串是否不是空白：<code>null</code>、空字符串<code>""</code>或只有空白字符。
+     * @Description:    [中]检查字符串是否不是空白：<code>null</code>、空字符串<code>""</code>或只有空白字符。
      * 
      * <pre>
      * StringUtil.isBlank(null)      = false
@@ -138,10 +111,8 @@ public class StringUtil {
      * StringUtil.isBlank("  bob  ") = true
      * </pre>
      * 
-     * @param str
-     *            要检查的字符串
-     * 
-     * @return 如果为空白, 则返回<code>true</code>
+     * @param str       [中]要检查的字符串
+     * @return          [中]如果为空白, 则返回<code>true</code>
      */
     public static boolean isNotBlank(String str) {
         int length;
@@ -159,20 +130,14 @@ public class StringUtil {
         return false;
     }
 
-    /*
-     * ==========================================================================
-     * ==
-     */
-    /* 默认值函数。 */
-    /*                                                                              */
-    /* 当字符串为null、empty或blank时，将字符串转换成指定的默认字符串。 */
-    /*
-     * ==========================================================================
-     * ==
-     */
-
     /**
-     * 如果字符串是<code>null</code>，则返回空字符串<code>""</code>，否则返回字符串本身。
+     * ==========================================================================
+     * 默认值函数。
+     * 当字符串为null、empty或blank时，将字符串转换成指定的默认字符串。
+     * ==========================================================================
+     */
+    /**
+     * @Description:    [中]如果字符串是<code>null</code>，则返回空字符串<code>""</code>，否则返回字符串本身。
      * 
      * <pre>
      * StringUtil.defaultIfNull(null)  = ""
@@ -181,17 +146,15 @@ public class StringUtil {
      * StringUtil.defaultIfNull("bat") = "bat"
      * </pre>
      * 
-     * @param str
-     *            要转换的字符串
-     * 
-     * @return 字符串本身或空字符串<code>""</code>
+     * @param str       [中]要转换的字符串
+     * @return          [中]字符串本身或空字符串<code>""</code>
      */
     public static String defaultIfNull(String str) {
         return (str == null) ? EMPTY_STRING : str;
     }
 
     /**
-     * 如果字符串是<code>null</code>，则返回指定默认字符串，否则返回字符串本身。
+     * @Description:        [中]如果字符串是<code>null</code>，则返回指定默认字符串，否则返回字符串本身。
      * 
      * <pre>
      * StringUtil.defaultIfNull(null, "default")  = "default"
@@ -200,12 +163,9 @@ public class StringUtil {
      * StringUtil.defaultIfNull("bat", "default") = "bat"
      * </pre>
      * 
-     * @param str
-     *            要转换的字符串
-     * @param defaultStr
-     *            默认字符串
-     * 
-     * @return 字符串本身或指定的默认字符串
+     * @param str           [中]要转换的字符串
+     * @param defaultStr    [中]默认字符串
+     * @return              [中]字符串本身或指定的默认字符串
      */
     public static String defaultIfNull(String str, String defaultStr) {
         return (str == null) ? defaultStr : str;

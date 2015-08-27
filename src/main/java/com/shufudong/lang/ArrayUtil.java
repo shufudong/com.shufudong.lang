@@ -1,11 +1,3 @@
-/**   
- * @Title: [中]ArrayUtil.java 
- * @Package [中]com.shufudong.httpclient.util 
- * @Description: [中]TODO(用一句话描述该文件做什么) 
- * @author [中]ShuFuDong
- * @date [中]2015年8月27日 上午2:09:32 
- * @version [中]V1.0   
- */
 package com.shufudong.lang;
 
 import java.lang.reflect.Array;
@@ -22,7 +14,7 @@ import java.util.Map;
  * [中]这个类中的每个方法都可以“安全”地处理<code>null</code>，而不会抛出<code>NullPointerException</code>。
  * </p>
  * @author [中]ShuFuDong
- * @date [中]2015年8月27日 上午2:09:32
+ * @date [中]2015年2月27日 上午2:09:32
  */
 public class ArrayUtil {
     

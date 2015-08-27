@@ -1,11 +1,3 @@
-/**   
-* @Title:       [中]ChainedRuntimeException.java 
-* @Package      [中]com.shufudong.lang.exception 
-* @Description: [中]可嵌套的异常.
-* @author       [中]Maven
-* @date         [中]2015年8月27日 下午10:53:42 
-* @version      [中]V1.0   
-*/ 
 package com.shufudong.lang.exception;
 
 import java.io.PrintStream;
@@ -15,7 +7,7 @@ import java.io.PrintWriter;
  * @ClassName:   [中]ChainedRuntimeException 
  * @Description: [中]可嵌套的异常.
  * @author       [中]Maven 
- * @date         [中]2015年8月27日 下午10:53:42 
+ * @date         [中]2015年2月27日 下午10:53:42 
  */
 public class ChainedRuntimeException extends RuntimeException implements ChainedThrowable {
     

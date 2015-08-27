@@ -1,11 +1,3 @@
-/**   
-* @Title:       [中]ClassInstantiationException.java 
-* @Package      [中]com.shufudong.lang 
-* @Description: [中]代表实例化类时失败的异常。
-* @author       [中]ShuFuDong
-* @date         [中]2015年8月27日 下午10:57:52 
-* @version      [中]V1.0   
-*/ 
 package com.shufudong.lang;
 
 import com.shufudong.lang.exception.ChainedException;
@@ -14,7 +6,7 @@ import com.shufudong.lang.exception.ChainedException;
  * @ClassName:   [中]ClassInstantiationException 
  * @Description: [中]代表实例化类时失败的异常。
  * @author       [中]ShuFuDong
- * @date         [中]2015年8月27日 下午10:57:52 
+ * @date         [中]2015年2月27日 下午10:57:52 
  */
 public class ClassInstantiationException extends ChainedException {
 

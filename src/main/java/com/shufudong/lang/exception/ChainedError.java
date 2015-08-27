@@ -1,11 +1,3 @@
-/**   
-* @Title: 		[中]ChainedError.java 
-* @Package 		[中]com.shufudong.lang.exception 
-* @Description: [中]可嵌套的异常.
-* @author 		[中]ShuFuDong
-* @date 		[中]2015年8月27日 下午10:36:29 
-* @version 		[中]V1.0   
-*/ 
 package com.shufudong.lang.exception;
 
 import java.io.PrintStream;
@@ -15,7 +7,7 @@ import java.io.PrintWriter;
  * @ClassName: 	    [中]ChainedError 
  * @Description:    [中]可嵌套的异常.
  * @author          [中]ShuFuDong
- * @date            [中]2015年8月27日 下午10:36:29 
+ * @date            [中]2015年2月27日 下午10:36:29 
  */
 public class ChainedError extends Error implements ChainedThrowable {
     

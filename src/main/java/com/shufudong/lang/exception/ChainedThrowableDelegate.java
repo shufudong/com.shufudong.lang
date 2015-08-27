@@ -1,11 +1,3 @@
-/**   
- * @Title:       [中]ChainedThrowableDelegate.java 
- * @Package      [中]com.shufudong.lang.exception 
- * @Description: [中]可嵌套的异常代理, 简化可嵌套的异常的实现.
- * @author       [中]ShuFuDong
- * @date         [中]2015年2月27日 下午9:55:20 
- * @version      [中]V1.0   
- */
 package com.shufudong.lang.exception;
 
 import java.io.PrintStream;
