@@ -36,7 +36,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Description:         [中]从<code>ChainedThrowable</code>实例中取得<code>Throwable</code>对象.
+    *[中]从<code>ChainedThrowable</code>实例中取得<code>Throwable</code>对象.
     * @param throwable      [中]<code>ChainedThrowable</code>实例
     * @return Throwable     [中]<code>Throwable</code>对象
     */
@@ -50,7 +50,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Description: [中]将<code>Throwable</code>转换成<code>ChainedThrowable</code>. 如果已经是
+    * [中]将<code>Throwable</code>转换成<code>ChainedThrowable</code>. 如果已经是
     * <code>ChainedThrowable</code>了, 则直接返回, 否则将它包装在
     * <code>ChainedThrowableDelegate</code>中返回.
     * 
@@ -65,7 +65,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Description: [中]取得被代理的异常的起因, 如果起因不是<code>ChainedThrowable</code>, 则用
+    * [中]取得被代理的异常的起因, 如果起因不是<code>ChainedThrowable</code>, 则用
     * <code>ChainedThrowableDelegate</code>包装并返回.
     * 
     * @param throwable          [中]异常
@@ -76,7 +76,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Description:         [中]打印调用栈到标准错误.
+    * [中]打印调用栈到标准错误.
     * @param throwable      [中]异常
     */
     public static void printStackTrace(ChainedThrowable throwable) {
@@ -84,7 +84,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Description:     [中]打印调用栈到指定输出流.
+    * [中]打印调用栈到指定输出流.
     * @param throwable  [中]异常
     * @param stream     [中]输出字节流
     */
@@ -93,7 +93,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Description:     [中]打印调用栈到指定输出流.
+    * [中]打印调用栈到指定输出流.
     * @param throwable  [中]异常
     * @param writer     [中]输出字符流
     */
@@ -110,7 +110,7 @@ public class ExceptionHelper {
     }
     
     /**  
-    * @Description:         [中]递归地打印所有异常链的调用栈.
+    * [中]递归地打印所有异常链的调用栈.
     * @param throwable      [中]异常
     * @param writer         [中]输出流
     * @param currentStack   [中]当前的堆栈
@@ -139,7 +139,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Description:     [中]打印异常的message.
+    * [中]打印异常的message.
     * @param throwable  [中]异常
     * @param writer     [中]输出流
     * @param cause      [中]是否是起因异常
@@ -159,7 +159,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @Description: 	[中]分析异常的调用栈, 取得当前异常的信息, 不包括起因异常的信息.
+    * [中]分析异常的调用栈, 取得当前异常的信息, 不包括起因异常的信息.
     * @param throwable  [中]取得指定异常的调用栈
     * @return			[中]调用栈数组
     */
@@ -186,7 +186,7 @@ public class ExceptionHelper {
     }
     
     /** 
-    * @ClassName: 	[中]StackTraceAnalyzer 
+    * [中]StackTraceAnalyzer 
     * @Description: [中]分析stack trace的辅助类.
     * @author 		[中]ShuFuDong
     * @date 		[中]2015年2月27日 下午10:30:09 

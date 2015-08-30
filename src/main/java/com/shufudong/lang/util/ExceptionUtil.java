@@ -1,4 +1,4 @@
-package com.shufudong.lang;
+package com.shufudong.lang.util;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -12,7 +12,7 @@ import java.io.StringWriter;
 public class ExceptionUtil {
     
     /** 
-    * @Description:     [中]取得异常的stacktrace字符串。
+    * [中]取得异常的stacktrace字符串。
     * @param throwable  [中]异常
     * @return           [中]字符串
     */

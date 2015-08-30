@@ -1,4 +1,4 @@
-package com.shufudong.lang;
+package com.shufudong.lang.util;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.WeakHashMap;
 
 /** 
  * @ClassName:      [中]ClassUtil 
- * @Description:    [中]有关 <code>Class</code> 处理的工具类。
+ * [中]有关 <code>Class</code> 处理的工具类。
  * <p>
  * [中]这个类中的每个方法都可以“安全”地处理 <code>null</code> ，而不会抛出
  * <code>NullPointerException</code>。
@@ -50,14 +50,14 @@ public class ClassUtil {
     */
     private static Map<Class, TypeInfo> TYPE_MAP = Collections.synchronizedMap(new WeakHashMap<Class, TypeInfo>());
 
-
-    /**
+    /*
      * ==========================================================================
      * [中]取得类名和package名的方法。
      * ==========================================================================
      */
+    
     /** 
-     * @Description:     [中]取得对象所属的类的直观类名。
+     * [中]取得对象所属的类的直观类名。
      * <p>
      * [中]相当于 <code>object.getClass().getName()</code> ，但不同的是，该方法用更直观的方式显示数组类型。 例如：
      * <pre>
@@ -83,7 +83,7 @@ public class ClassUtil {
     }
 
     /** 
-     * @Description:     [中]取得直观的类名。
+     * [中]取得直观的类名。
      * <p>
      * [中]相当于 <code>clazz.getName()</code> ，但不同的是，该方法用更直观的方式显示数组类型。 例如：
      * <pre>
@@ -108,7 +108,7 @@ public class ClassUtil {
     }
 
     /** 
-     * @Description:     [中]TODO(这里用一句话描述这个方法的作用) 
+     * [中]取得直观的类名。
      * <p>
      * <code>className</code> 必须是从 <code>clazz.getName()</code>
      * [中]所返回的合法类名。该方法用更直观的方式显示数组类型。 例如：
@@ -130,9 +130,8 @@ public class ClassUtil {
         return getClassName(className, true);
     }
 
-
     /**
-     * @Description:            [中]取得直观的类名。
+     * [中]取得直观的类名。
      * @param className         [中]类名
      * @param processInnerClass [中]是否将内联类分隔符 <code>'$'</code> 转换成 <code>'.'</code>
      * @return                  [中]直观的类名，或 <code>null</code>
@@ -221,9 +220,8 @@ public class ClassUtil {
         return componentTypeName.toString();
     }
 
-
     /**
-     * @Description:    [中]取得指定对象所属的类的短类名，不包括package名。
+     * [中]取得指定对象所属的类的短类名，不包括package名。
      * <p>
      * [中]此方法可以正确显示数组和内联类的名称。
      * </p>
@@ -244,9 +242,8 @@ public class ClassUtil {
         return getShortClassName(object.getClass().getName());
     }
 
-
     /**
-     * @Description:    [中]取得短类名，不包括package名。
+     * [中]取得短类名，不包括package名。
      * <p>
      * [中]此方法可以正确显示数组和内联类的名称。
      * </p>
@@ -267,9 +264,8 @@ public class ClassUtil {
         return getShortClassName(clazz.getName());
     }
 
-
     /**
-     * @Description:    [中]取得类名，不包括package名。
+     * [中]取得类名，不包括package名。
      * <p>
      * [中]此方法可以正确显示数组和内联类的名称。
      * </p>
@@ -305,9 +301,8 @@ public class ClassUtil {
         return new String(chars, lastDot, chars.length - lastDot);
     }
 
-
     /**
-     * @Description:    [中]取得指定对象所属的类的package名。
+     * [中]取得指定对象所属的类的package名。
      * <p>
      * [中]对于数组，此方法返回的是数组元素类型的package名。
      * </p>
@@ -321,9 +316,8 @@ public class ClassUtil {
         return getPackageName(object.getClass().getName());
     }
 
-
     /**
-     * @Description:    [中]取得指定类的package名。
+     * [中]取得指定类的package名。
      * <p>
      * [中]对于数组，此方法返回的是数组元素类型的package名。
      * </p>
@@ -339,7 +333,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]取得指定类名的package名。
+     * [中]取得指定类名的package名。
      * <p>
      * [中]对于数组，此方法返回的是数组元素类型的package名。
      * </p>
@@ -359,15 +353,15 @@ public class ClassUtil {
         return className.substring(0, i);
     }
 
-
-    /**
+    /*
      * ==========================================================================
      * [中]取得类名和package名的resource名的方法。
      * [中]和类名、package名不同的是，resource名符合文件名命名规范，例如:
      * ==========================================================================
      */
+    
     /**
-     * @Description:    [中]取得对象所属的类的资源名。
+     * [中]取得对象所属的类的资源名。
      * <p>
      * [中]例如：
      * <pre>
@@ -386,7 +380,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]取得指定类的资源名。
+     * [中]取得指定类的资源名。
      * <p>
      * [中]例如：
      * <pre>
@@ -404,7 +398,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:        [中]取得指定类的资源名。
+     * [中]取得指定类的资源名。
      * <p>
      * [中]例如：
      * <pre>
@@ -422,7 +416,7 @@ public class ClassUtil {
     }
     
     /**
-     * @Description:    [中]取得指定对象所属的类的package名的资源名。
+     * [中]取得指定对象所属的类的package名的资源名。
      * <p>
      * [中]对于数组，此方法返回的是数组元素类型的package名。
      * </p>
@@ -436,9 +430,8 @@ public class ClassUtil {
         return getPackageNameForObject(object).replace(PACKAGE_SEPARATOR_CHAR, RESOURCE_SEPARATOR_CHAR);
     }
 
-
     /**
-     * @Description:    [中]取得指定类的package名的资源名。
+     * [中]取得指定类的package名的资源名。
      * <p>
      * [中]对于数组，此方法返回的是数组元素类型的package名。
      * </p>
@@ -452,9 +445,8 @@ public class ClassUtil {
         return getPackageName(clazz).replace(PACKAGE_SEPARATOR_CHAR, RESOURCE_SEPARATOR_CHAR);
     }
 
-
     /**
-     * @Description:    [中]取得指定类名的package名的资源名。
+     * [中]取得指定类名的package名的资源名。
      * <p>
      * [中]对于数组，此方法返回的是数组元素类型的package名。
      * </p>
@@ -468,13 +460,14 @@ public class ClassUtil {
         return getPackageName(className).replace(PACKAGE_SEPARATOR_CHAR, RESOURCE_SEPARATOR_CHAR);
     }
 
-    /**
+    /*
      * ==========================================================================
-     * 取得类的信息，如父类, 接口, 数组的维数等。
+     * [中]取得类的信息，如父类, 接口, 数组的维数等。
      * ==========================================================================
      */
+    
     /**
-     * @Description:        [中]取得指定维数的 <code>Array</code>类.
+     * [中]取得指定维数的 <code>Array</code>类.
      * @param componentType [中]数组的基类
      * @param dimension     [中]维数，如果小于 <code>0</code> 则看作 <code>0</code>
      * @return              [中]如果维数为0, 则返回基类本身, 否则返回数组类，如果数组的基类为 <code>null</code> ，则返回<code>null</code>
@@ -490,7 +483,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]取得数组元素的类型。
+     * [中]取得数组元素的类型。
      * @param type      [中]要查找的类
      * @return          [中]如果是数组, 则返回数组元素的类型, 否则返回 <code>null</code>
      */
@@ -502,7 +495,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]取得数组的维数。
+     * [中]取得数组的维数。
      * @param clazz     [中]要查找的类
      * @return          [中]数组的维数. 如果不是数组, 则返回 <code>0</code> ，如果数组为 <code>null</code> ，是返回<code>-1</code>
      */
@@ -514,7 +507,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]取得指定类的所有父类。
+     * [中]取得指定类的所有父类。
      * <p>
      * [中]对于一个 <code>Class</code> 实例，如果它不是接口，也不是数组，此方法依次列出从该类的父类开始直到
      * <code>Object</code> 的所有类。
@@ -577,7 +570,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]取得指定类的所有接口。
+     * [中]取得指定类的所有接口。
      * <p>
      * [中]对于一个 <code>Class</code> 实例，如果它不是接口，也不是数组，此方法依次列出从该类的父类开始直到
      * <code>Object</code> 的所有类。
@@ -638,9 +631,8 @@ public class ClassUtil {
         return getTypeInfo(clazz).getInterfaces();
     }
 
-
     /**
-     * @Description:    [中]判断指定类是否为内联类。
+     * [中]判断指定类是否为内联类。
      * @param clazz     [中]要查找的类
      * @return          [中]如果是，则返回 <code>true</code>
      */
@@ -652,7 +644,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]检查一组指定类型 <code>fromClasses</code> 的对象是否可以赋值给另一组类型 <code>classes</code>。
+     * [中]检查一组指定类型 <code>fromClasses</code> 的对象是否可以赋值给另一组类型 <code>classes</code>。
      * <p>
      * [中]此方法可以用来确定指定类型的参数 <code>object1, object2, ...</code> 是否可以用来调用确定参数类型为
      * <code>class1, class2,
@@ -714,9 +706,8 @@ public class ClassUtil {
         return true;
     }
 
-
     /**
-     * @Description:        [中]检查指定类型 <code>fromClass</code> 的对象是否可以赋值给另一种类型 <code>clazz</code>。
+     * [中]检查指定类型 <code>fromClass</code> 的对象是否可以赋值给另一种类型 <code>clazz</code>。
      * 
      * <p>
      * [中]此方法可以用来确定指定类型的参数 <code>object1, object2, ...</code> 是否可以用来调用确定参数类型
@@ -837,9 +828,8 @@ public class ClassUtil {
         return false;
     }
 
-
     /**
-     * @Description:    [中]取得指定类的 <code>TypeInfo</code>。
+     * [中]取得指定类的 <code>TypeInfo</code>。
      * @param type      [中]指定类或接口
      * @return          [中]<code>TypeInfo</code> 对象.
      */
@@ -863,7 +853,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]代表一个类的信息, 包括父类, 接口, 数组的维数等.
+     * [中]代表一个类的信息, 包括父类, 接口, 数组的维数等.
      */
     protected static class TypeInfo {
         private Class<?> type;
@@ -874,7 +864,7 @@ public class ClassUtil {
 
 
         /**
-         * @Description:    [中]创建 <code>TypeInfo</code>。
+         * [中]创建 <code>TypeInfo</code>。
          * @param type      [中]创建指定类的 <code>TypeInfo</code>
          */
         private TypeInfo(Class<?> type) {
@@ -967,7 +957,7 @@ public class ClassUtil {
 
 
         /**
-         * @Description:    [中]将所有的原子类型转换成对应的包装类，其它类型不变。
+         * [中]将所有的原子类型转换成对应的包装类，其它类型不变。
          * @param type      [中]要转换的类型
          * @return          [中]非原子类型
          */
@@ -1003,7 +993,7 @@ public class ClassUtil {
         }
 
         /**
-         * @Description:    [中]取得 <code>TypeInfo</code> 所代表的java类。
+         * [中]取得 <code>TypeInfo</code> 所代表的java类。
          * @return          [中]<code>TypeInfo</code> 所代表的java类
          */
         public Class<?> getType() {
@@ -1011,7 +1001,7 @@ public class ClassUtil {
         }
 
         /**
-         * @Description:    [中]取得数组元素的类型。
+         * [中]取得数组元素的类型。
          * @return          [中]如果是数组, 则返回数组元素的类型, 否则返回 <code>null</code>
          */
         public Class<?> getArrayComponentType() {
@@ -1019,7 +1009,7 @@ public class ClassUtil {
         }
 
         /**
-         * @Description:    [中]取得数组的维数。
+         * [中]取得数组的维数。
          * @return          [中]数组的维数. 如果不是数组, 则返回 <code>0</code>
          */
         public int getArrayDimension() {
@@ -1027,7 +1017,7 @@ public class ClassUtil {
         }
 
         /**
-         * @Description:    [中]取得所有的父类。
+         * [中]取得所有的父类。
          * @return          [中]所有的父类
          */
         public List<Class> getSuperclasses() {
@@ -1035,7 +1025,7 @@ public class ClassUtil {
         }
 
         /**
-         * @Description:    [中]取得所有的接口。
+         * [中]取得所有的接口。
          * @return [中]所有的接口
          */
         public List<Class> getInterfaces() {
@@ -1043,14 +1033,14 @@ public class ClassUtil {
         }
     }
 
-
-    /**
+    /*
      * ==========================================================================
      * [中]有关primitive类型的方法。
      * ==========================================================================
      */
+    
     /**
-     * @Description:    [中]返回指定类型所对应的primitive类型。
+     * [中]返回指定类型所对应的primitive类型。
      * @param clazz     [中]要检查的类型
      * @return          [中]如果指定类型为<code>null</code>或不是primitive类型的包装类，则返回<code>null</code>
      *                      ，否则返回相应的primitive类型。
@@ -1100,7 +1090,7 @@ public class ClassUtil {
     }
 
     /**
-     * @Description:    [中]返回指定类型所对应的非primitive类型。
+     * [中]返回指定类型所对应的非primitive类型。
      * @param clazz     [中]要检查的类型
      * @return          [中]如果指定类型为<code>null</code>，则返回<code>null</code>
      *                      ，如果是primitive类型，则返回相应的包装类，否则返回原始的类型。

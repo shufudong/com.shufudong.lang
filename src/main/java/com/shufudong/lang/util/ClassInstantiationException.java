@@ -1,4 +1,4 @@
-package com.shufudong.lang;
+package com.shufudong.lang.util;
 
 import com.shufudong.lang.exception.ChainedException;
 
@@ -13,14 +13,14 @@ public class ClassInstantiationException extends ChainedException {
     private static final long serialVersionUID = 7054896282777928820L;
     
     /** 
-    * Description:   [中]构造一个空的异常.
+    * [中]构造一个空的异常.
     */
     public ClassInstantiationException() {
         super();
     }
     
     /** 
-    * Description:   [中]构造一个异常, 指明异常的详细信息.
+    * [中]构造一个异常, 指明异常的详细信息.
     * @param message [中]详细信息
     */
     public ClassInstantiationException(String message) {
@@ -28,7 +28,7 @@ public class ClassInstantiationException extends ChainedException {
     }
     
     /** 
-    * Description:   [中]构造一个异常, 指明引起这个异常的起因.
+    * [中]构造一个异常, 指明引起这个异常的起因.
     * @param cause   [中]异常的起因
     */
     public ClassInstantiationException(Throwable cause) {
@@ -36,7 +36,7 @@ public class ClassInstantiationException extends ChainedException {
     }
     
     /** 
-    * Description:   [中]构造一个异常, 指明引起这个异常的起因.
+    * [中]构造一个异常, 指明引起这个异常的起因.
     * @param message [中]详细信息
     * @param cause   [中]异常的起因
     */

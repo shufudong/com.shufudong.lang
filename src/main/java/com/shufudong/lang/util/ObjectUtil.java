@@ -1,4 +1,4 @@
-package com.shufudong.lang;
+package com.shufudong.lang.util;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
@@ -15,7 +15,7 @@ import java.util.Map;
 public class ObjectUtil {
     
     /**
-     * @Description:    [中]用于表示<code>null</code>的常量。
+     * [中]用于表示<code>null</code>的常量。
      * <p>[中]例如，<code>HashMap.get(Object)</code>方法返回<code>null</code>有两种可能： 值不存在或值为
      * <code>null</code>。而这个singleton可用来区别这两种情形。
      * </p>
@@ -29,7 +29,7 @@ public class ObjectUtil {
     };
     
     /**
-     * @Description:    [中]如果对象为<code>null</code>，则返回指定默认对象，否则返回对象本身。
+     * [中]如果对象为<code>null</code>，则返回指定默认对象，否则返回对象本身。
      * 
      * <pre>
      * ObjectUtil.defaultIfNull(null, null)      = null
@@ -47,15 +47,15 @@ public class ObjectUtil {
         return (object != null) ? object : defaultValue;
     }
 
-
-    /**
+    /*
      * ==========================================================================
      * 比较函数。
      * 以下方法用来比较两个对象是否相同。
      * ==========================================================================
      */
+    
     /**
-     * @Description:[中]比较两个对象是否完全相等。
+     * [中]比较两个对象是否完全相等。
      * <p>[中]此方法可以正确地比较多维数组。
      * <pre>
      * ObjectUtil.equals(null, null)                  = true
@@ -76,15 +76,15 @@ public class ObjectUtil {
         return ArrayUtil.equals(object1, object2);
     }
 
-
-    /**
+    /*
      * ==========================================================================
      * Hashcode函数。
      * 以下方法用来取得对象的hash code.
      * ==========================================================================
      */
+    
     /**
-     * @Description:    [中]取得对象的hash值, 如果对象为<code>null</code>, 则返回<code>0</code>。
+     * [中]取得对象的hash值, 如果对象为<code>null</code>, 则返回<code>0</code>。
      * <p>此方法可以正确地处理多维数组。</p>
      * @param object    [中]对象
      * @return          [中]hash值
@@ -94,7 +94,7 @@ public class ObjectUtil {
     }
 
     /**
-     * @Description:    [中]取得对象的原始的hash值, 如果对象为<code>null</code>, 则返回<code>0</code>。
+     * [中]取得对象的原始的hash值, 如果对象为<code>null</code>, 则返回<code>0</code>。
      * <p>该方法使用<code>System.identityHashCode</code>来取得hash值，该值不受对象本身的
      * <code>hashCode</code>方法的影响。
      * </p>
@@ -105,13 +105,14 @@ public class ObjectUtil {
         return (object == null) ? 0 : System.identityHashCode(object);
     }
 
-    /**
+    /*
      * ==========================================================================
      * 取得对象的identity.
      * ==========================================================================
      */
+    
     /**
-     * @Description:    [中]取得对象自身的identity，如同对象没有覆盖<code>toString()</code>方法时，
+     * [中]取得对象自身的identity，如同对象没有覆盖<code>toString()</code>方法时，
      * <code>Object.toString()</code>的原始输出。
      * <pre>
      * ObjectUtil.identityToString(null)          = null
@@ -132,7 +133,7 @@ public class ObjectUtil {
     }
 
     /**
-     * @Description:    [中]取得对象自身的identity，如同对象没有覆盖<code>toString()</code>方法时，<code>Object.toString()</code>的原始输出。
+     * [中]取得对象自身的identity，如同对象没有覆盖<code>toString()</code>方法时，<code>Object.toString()</code>的原始输出。
      * 
      * <pre>
      * ObjectUtil.identityToString(null, "NULL")            = "NULL"
@@ -154,7 +155,7 @@ public class ObjectUtil {
     }
 
     /**
-     * @Description:    [中]将对象自身的identity——如同对象没有覆盖<code>toString()</code>方法时，<code>Object.toString()</code>的原始输出——追加到<code>StringBuffer</code>中。
+     * [中]将对象自身的identity——如同对象没有覆盖<code>toString()</code>方法时，<code>Object.toString()</code>的原始输出——追加到<code>StringBuffer</code>中。
      * 
      * <pre>
      * ObjectUtil.appendIdentityToString(*, null)            = null
@@ -180,15 +181,15 @@ public class ObjectUtil {
         return buffer.append('@').append(Integer.toHexString(identityHashCode(object)));
     }
 
-
-    /**
+    /*
      * ==========================================================================
      * Clone函数。
      * 以下方法调用Object.clone方法，默认是“浅复制”（shallow copy）。
      * ==========================================================================
      */
+    
     /**
-     * @Description:    [中]复制一个对象。如果对象为<code>null</code>，则返回<code>null</code>。
+     * [中]复制一个对象。如果对象为<code>null</code>，则返回<code>null</code>。
      * <p>
      * 此方法调用<code>Object.clone</code>方法，默认只进行“浅复制”。 对于数组，调用
      * <code>ArrayUtil.clone</code>方法更高效。
@@ -197,7 +198,6 @@ public class ObjectUtil {
      * @param array     [中]要复制的数组
      * @return          [中]数组的复本，如果原始数组为<code>null</code>，则返回<code>null</code>
      */
-    
     public static Object clone(Object array) {
         if (array == null) {
             return null;
@@ -268,14 +268,14 @@ public class ObjectUtil {
         }
     }
 
-    /**
+    /*
      * ==========================================================================
      * 比较对象的类型。
      * ==========================================================================
      */
 
     /**
-     * @Description:    [中]检查两个对象是否属于相同类型。<code>null</code>将被看作任意类型。
+     * [中]检查两个对象是否属于相同类型。<code>null</code>将被看作任意类型。
      * 
      * @param object1   [中]对象1
      * @param object2   [中]对象2
@@ -289,15 +289,14 @@ public class ObjectUtil {
         return object1.getClass().equals(object2.getClass());
     }
 
-
-    /**
+    /*
      * ==========================================================================
      * toString方法。
      * ==========================================================================
      */
 
     /**
-     * @Description:    [中]取得对象的<code>toString()</code>的值，如果对象为<code>null</code>，则返回空字符串<code>""</code>。
+     * [中]取得对象的<code>toString()</code>的值，如果对象为<code>null</code>，则返回空字符串<code>""</code>。
      * 
      * <pre>
      * ObjectUtil.toString(null)         = ""
@@ -316,7 +315,7 @@ public class ObjectUtil {
     }
 
     /**
-     * @Description:    [中]取得对象的<code>toString()</code>的值，如果对象为<code>null</code>，则返回指定字符串。
+     * [中]取得对象的<code>toString()</code>的值，如果对象为<code>null</code>，则返回指定字符串。
      * 
      * <pre>
      * ObjectUtil.toString(null, null)           = null
@@ -337,7 +336,7 @@ public class ObjectUtil {
     }
     
     /** 
-    * @Description: [中]判断一个CharSequence类型是否为空。
+    *  [中]判断一个CharSequence类型是否为空。
     * <p>所有实现了CharSequence接口的类都可以用这个函数进行非空判断</p>
     * <ul>
     * <li>String</li>
@@ -355,7 +354,7 @@ public class ObjectUtil {
     }
     
     /** 
-     * @Description:    [中]判断一个Collection类型是否为空。
+     * [中]判断一个Collection类型是否为空。
      * <p>所有实现了Collection接口的类都可以用这个函数进行非空判断</p>
      * @param  c        [中]   
      * @return          [中] 如果参数不为空，则返回true;反之返回false。 
@@ -365,7 +364,7 @@ public class ObjectUtil {
     }
     
     /** 
-     * @Description:    [中]判断一个Object对象是否为空。
+     * [中]判断一个Object对象是否为空。
      * @param  value    [中]   
      * @return          [中] 如果参数不为空，则返回true;反之返回false。 
      * @throws 

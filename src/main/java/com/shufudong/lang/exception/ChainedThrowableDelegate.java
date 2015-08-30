@@ -41,8 +41,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
     protected Throwable delegatedThrowable;
 
     /** 
-    * <p>Title: 		[中]ChainedThrowableDelegate</p> 
-    * <p>Description: 	[中]创建一个<code>Throwable</code>代理.</p> 
+    * [中]创建一个<code>Throwable</code>代理.
     * @param throwable  [中]被代理的异常
     */
     public ChainedThrowableDelegate(Throwable throwable) {
@@ -51,8 +50,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
     
     /*
      * (non-Javadoc) 
-     * <p>Title: getCause</p> 
-     * <p>Description:  [中]取得被代理的异常的起因.</p>
+     * [中]取得被代理的异常的起因.
      * @return          [中]异常的起因.
      * @see com.shufudong.lang.exception.ChainedThrowable#getCause()
      */
@@ -82,8 +80,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
     }
     
     /** 
-    * @Title: getCauseByWellKnownTypes 
-    * @Description:     [中]取得常见<code>Throwable</code>类的异常起因.
+    * [中]取得常见<code>Throwable</code>类的异常起因.
     * @param throwable  [中]异常
     * @return Throwable [中]异常起因
     */
@@ -113,8 +110,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
     }
     
     /** 
-    * @Title: getCauseByMethodName 
-    * @Description:         [中]通过常见的方法动态地取得异常起因.
+    * [中]通过常见的方法动态地取得异常起因.
     * @param throwable      [中]异常
     * @param throwableClass [中]异常类
     * @param methodName     [中]方法名
@@ -147,8 +143,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
     }
     
     /** 
-    * @Title: getCauseByFieldName 
-    * @Description:             [中]通过常见的方法动态地取得异常起因.
+    * [中]通过常见的方法动态地取得异常起因.
     * @param throwable          [中]异常
     * @param throwableClass     [中]异常类
     * @param fieldName          [中]字段名
@@ -180,8 +175,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
 
     /*
      * (non-Javadoc) 
-     * <p>Title: printStackTrace</p> 
-     * <p>Description: [中]打印调用栈到标准错误.</p>
+     * [中]打印调用栈到标准错误.
      * @see com.shufudong.lang.exception.ChainedThrowable#printStackTrace()
      */
     @Override
@@ -191,8 +185,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
 
     /*
      * (non-Javadoc) 
-     * <p>Title: printStackTrace</p> 
-     * <p>Description: [中]打印调用栈到指定输出流.</p>
+     * [中]打印调用栈到指定输出流.
      * @param stream   [中]输出字节流.
      * @see com.shufudong.lang.exception.ChainedThrowable#printStackTrace(java.io.PrintStream)
      */
@@ -203,8 +196,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
 
     /*
      * (non-Javadoc) 
-     * <p>Title: printStackTrace</p> 
-     * <p>Description:  [中]打印调用栈到指定输出流.</p>
+     * [中]打印调用栈到指定输出流.
      * @param writer    [中]输出字符流.
      * @see com.shufudong.lang.exception.ChainedThrowable#printStackTrace(java.io.PrintWriter)
      */
@@ -215,8 +207,7 @@ public class ChainedThrowableDelegate implements ChainedThrowable {
 
     /*
      * (non-Javadoc) 
-     * <p>Title: printCurrentStackTrace</p> 
-     * <p>Description:  [中]打印异常的调用栈, 不包括起因异常的信息.</p>
+     * [中]打印异常的调用栈, 不包括起因异常的信息.
      * @param writer    [中]打印到输出流
      * @see com.shufudong.lang.exception.ChainedThrowable#printCurrentStackTrace(java.io.PrintWriter)
      */
