@@ -251,20 +251,19 @@ public class ObjectUtil {
 
         try {
             Method cloneMethod = clazz.getMethod("clone", ArrayUtil.EMPTY_CLASS_ARRAY);
-
             return cloneMethod.invoke(array, ArrayUtil.EMPTY_OBJECT_ARRAY);
         }
         catch (NoSuchMethodException e) {
-            throw new CloneNotSupportedException(e);
+            throw new CloneNotSupportedException(ObjectUtil.class,e);
         }
         catch (IllegalArgumentException e) {
-            throw new CloneNotSupportedException(e);
+            throw new CloneNotSupportedException(ObjectUtil.class,e);
         }
         catch (IllegalAccessException e) {
-            throw new CloneNotSupportedException(e);
+            throw new CloneNotSupportedException(ObjectUtil.class,e);
         }
         catch (InvocationTargetException e) {
-            throw new CloneNotSupportedException(e);
+            throw new CloneNotSupportedException(ObjectUtil.class,e);
         }
     }
 

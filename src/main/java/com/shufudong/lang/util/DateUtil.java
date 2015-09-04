@@ -30,7 +30,7 @@ public class DateUtil {
     public static final String noSecondFormat = "yyyy-MM-dd HH:mm";
 
     /**
-     * 获取日期格式
+     *[中] 获取日期格式
      * 
      * @param pattern
      * @return
@@ -43,7 +43,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取当前日期格式：yyyy-MM-dd
+     *[中] 获取当前日期格式：yyyy-MM-dd
      * 
      * @return
      */
@@ -57,7 +57,7 @@ public class DateUtil {
     }
 
     /**
-     * 根据传人格式，格式化传入时间
+     *[中] 根据传人格式，格式化传入时间
      * 
      * @param date
      * @param format
@@ -72,7 +72,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化传入时间：yyyyMMdd
+     *[中] 格式化传入时间：yyyyMMdd
      * 
      * @param sDate
      * @return
@@ -93,7 +93,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化传入时间：yyyyMMdd
+     *[中] 格式化传入时间：yyyyMMdd
      * 
      * @param date
      * @param format
@@ -112,7 +112,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化传入时间：yyyyMMdd
+     *[中] 格式化传入时间：yyyyMMdd
      * 
      * @param sDate
      * @param format
@@ -135,7 +135,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化传入时间：yyyyMMdd
+     *[中] 格式化传入时间：yyyyMMdd
      * 
      * @param sDate
      * @param delimit
@@ -171,7 +171,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化传入时间：yyyy-MM-dd HH:mm:ss"
+     *[中] 格式化传入时间：yyyy-MM-dd HH:mm:ss"
      * 
      * @param sDate
      * @return
@@ -190,7 +190,7 @@ public class DateUtil {
     }
 
     /**
-     * 计算当前时间几小时之后的时间
+     *[中] 计算当前时间几小时之后的时间
      * 
      * @param date
      * @param hours
@@ -202,7 +202,7 @@ public class DateUtil {
     }
 
     /**
-     * 计算当前时间几分钟之后的时间
+     *[中] 计算当前时间几分钟之后的时间
      * 
      * @param date
      * @param minutes
@@ -214,7 +214,7 @@ public class DateUtil {
     }
 
     /**
-     * 计算当前时间N秒之后的时间
+     *[中] 计算当前时间N秒之后的时间
      * 
      * @param date1
      * @param secs
@@ -227,7 +227,7 @@ public class DateUtil {
     }
 
     /**
-     * 判断输入的字符串是否为合法的小时
+     *[中] 判断输入的字符串是否为合法的小时
      * 
      * @param hourStr
      * 
@@ -246,7 +246,7 @@ public class DateUtil {
     }
 
     /**
-     * 判断输入的字符串是否为合法的分或秒
+     *[中] 判断输入的字符串是否为合法的分或秒
      * 
      * @param minuteStr
      * 
@@ -265,7 +265,7 @@ public class DateUtil {
     }
 
     /**
-     * 取得新的日期
+     *[中] 取得新的日期
      * 
      * @param date1
      *            日期
@@ -279,7 +279,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取24小时后的时间
+     *[中] 获取24小时后的时间
      * 
      * @param sDate
      * @return
@@ -295,7 +295,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化传入时间：yyyyMMddHHmmss
+     *[中] 格式化传入时间：yyyyMMddHHmmss
      * 
      * @param date
      * @return
@@ -307,7 +307,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化传入时间：yyyy-MM-dd HH:mm:ss
+     *[中] 格式化传入时间：yyyy-MM-dd HH:mm:ss
      * 
      * @param date
      * @return
@@ -318,7 +318,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取当前时间字符串 传入格式
+     *[中] 获取当前时间字符串 传入格式
      * 
      * @param date
      * @param dateFormat
@@ -333,7 +333,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取24小时之前的时间
+     *[中] 获取24小时之前的时间
      * 
      * @param sDate
      * @return
@@ -349,7 +349,7 @@ public class DateUtil {
     }
 
     /**
-     * @return 当天的时间格式化为"yyyyMMdd"
+     *[中] @return 当天的时间格式化为"yyyyMMdd"
      */
     public static String getDateString(Date date) {
         DateFormat df = getNewDateFormat(shortFormat);
@@ -358,7 +358,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化时间：yyyy-MM-dd
+     *[中] 格式化时间：yyyy-MM-dd
      * 
      * @param date
      * @return
@@ -370,7 +370,7 @@ public class DateUtil {
     }
 
     /**
-     * 取得“X年X月X日”的日期格式
+     *[中] 取得“X年X月X日”的日期格式
      * 
      * @param date
      * 
@@ -383,7 +383,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取当天时间 格式shortFormat：yyyyMMdd
+     *[中] 获取当天时间 格式shortFormat：yyyyMMdd
      * 
      * @return 格式化时间
      */
@@ -394,7 +394,7 @@ public class DateUtil {
     }
 
     /**
-     * 格式化时间：HHmmss
+     *[中] 格式化时间：HHmmss
      * 
      * @param date
      * @return
@@ -406,7 +406,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取n天之前的时间
+     *[中] 获取n天之前的时间
      * 
      * @param days
      * @return
@@ -420,7 +420,7 @@ public class DateUtil {
     }
 
     /**
-     * 取得两个日期间隔秒数（日期1-日期2）
+     *[中] 取得两个日期间隔秒数（日期1-日期2）
      * 
      * @param one
      *            日期1
@@ -441,7 +441,7 @@ public class DateUtil {
     }
 
     /**
-     * 取得两个日期间隔分钟数（日期1-日期2）
+     *[中] 取得两个日期间隔分钟数（日期1-日期2）
      * 
      * @param one
      *            日期1
@@ -463,7 +463,7 @@ public class DateUtil {
     }
 
     /**
-     * 取得两个日期的间隔天数
+     *[中] 取得两个日期的间隔天数
      * 
      * @param one
      * @param two
@@ -483,7 +483,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取n天之前的时间 格式：yyyyMMdd
+     *[中] 获取n天之前的时间 格式：yyyyMMdd
      * 
      * @param dateString
      * @param days
@@ -505,7 +505,7 @@ public class DateUtil {
     }
 
     /**
-     * 验证是否yyyyMMdd格式
+     *[中] 验证是否yyyyMMdd格式
      * 
      * @param strDate
      * @return
@@ -516,7 +516,8 @@ public class DateUtil {
         }
 
         try {
-            Integer.parseInt(strDate); // ---- 避免日期中输入非数字 ----
+         // [中]---- 避免日期中输入非数字 ----
+            Integer.parseInt(strDate); 
         } catch (Exception NumberFormatException) {
             return false;
         }
@@ -533,7 +534,7 @@ public class DateUtil {
     }
 
     /**
-     * 验证是否yyyyMMdd格式
+     *[中] 验证是否yyyyMMdd格式
      * 
      * @param strDate
      * @param delimiter
@@ -547,7 +548,7 @@ public class DateUtil {
     }
 
     /**
-     * 判断表示时间的字符是否为符合yyyyMMddHHmmss格式
+     *[中] 判断表示时间的字符是否为符合yyyyMMddHHmmss格式
      * 
      * @param strDate
      * @return
@@ -575,7 +576,7 @@ public class DateUtil {
     }
 
     /**
-     * 判断表示时间的字符是否为符合yyyyMMddHHmmss格式
+     *[中] 判断表示时间的字符是否为符合yyyyMMddHHmmss格式
      * 
      * @param strDate
      * @param delimiter
@@ -587,10 +588,21 @@ public class DateUtil {
         return isValidLongDateFormat(temp);
     }
 
+    /** 
+    * [中]
+    * @param strDate
+    * @return           [中]设定文件 
+    */
     public static String getShortDateString(String strDate) {
         return getShortDateString(strDate, "-|/");
     }
 
+    /** 
+    * [中]
+    * @param strDate
+    * @param delimiter
+    * @return           [中]设定文件 
+    */
     public static String getShortDateString(String strDate, String delimiter) {
         if (StringUtil.isBlank(strDate)) {
             return null;
@@ -605,6 +617,10 @@ public class DateUtil {
         return null;
     }
 
+    /** 
+    * [中]
+    * @return           [中]设定文件 
+    */
     public static String getShortFirstDayOfMonth() {
         Calendar cal = Calendar.getInstance();
         Date dt = new Date();
@@ -617,12 +633,20 @@ public class DateUtil {
         return df.format(cal.getTime());
     }
 
+    /** 
+    * [中]
+    * @return           [中]设定文件 
+    */
     public static String getWebTodayString() {
         DateFormat df = getNewDateFormat(webFormat);
 
         return df.format(new Date());
     }
 
+    /** 
+    * [中]
+    * @return           [中]设定文件 
+    */
     public static String getWebFirstDayOfMonth() {
         Calendar cal = Calendar.getInstance();
         Date dt = new Date();
@@ -635,6 +659,13 @@ public class DateUtil {
         return df.format(cal.getTime());
     }
 
+    /** 
+    * [中]
+    * @param dateString
+    * @param formatIn
+    * @param formatOut
+    * @return           [中]设定文件 
+    */
     public static String convert(String dateString, DateFormat formatIn,
             DateFormat formatOut) {
         try {
@@ -646,6 +677,11 @@ public class DateUtil {
         }
     }
 
+    /** 
+    * [中]
+    * @param dateString
+    * @return           [中]设定文件 
+    */
     public static String convert2WebFormat(String dateString) {
         DateFormat df1 = getNewDateFormat(shortFormat);
         DateFormat df2 = getNewDateFormat(webFormat);
@@ -653,6 +689,11 @@ public class DateUtil {
         return convert(dateString, df1, df2);
     }
 
+    /** 
+    * [中]
+    * @param dateString
+    * @return           [中]设定文件 
+    */
     public static String convert2ChineseDtFormat(String dateString) {
         DateFormat df1 = getNewDateFormat(shortFormat);
         DateFormat df2 = getNewDateFormat(chineseDtFormat);
@@ -660,6 +701,11 @@ public class DateUtil {
         return convert(dateString, df1, df2);
     }
 
+    /** 
+    * [中]
+    * @param dateString
+    * @return           [中]设定文件 
+    */
     public static String convertFromWebFormat(String dateString) {
         DateFormat df1 = getNewDateFormat(shortFormat);
         DateFormat df2 = getNewDateFormat(webFormat);
@@ -667,6 +713,12 @@ public class DateUtil {
         return convert(dateString, df2, df1);
     }
 
+    /** 
+    * [中]
+    * @param date1
+    * @param date2
+    * @return           [中]设定文件 
+    */
     public static boolean webDateNotLessThan(String date1, String date2) {
         DateFormat df = getNewDateFormat(webFormat);
 
@@ -674,6 +726,7 @@ public class DateUtil {
     }
 
     /**
+     * [中]
      * @param date1
      * @param date2
      * @param dateWebFormat2
@@ -696,22 +749,13 @@ public class DateUtil {
         }
     }
 
-    public static String getEmailDate(Date today) {
-        String todayStr;
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日HH:mm:ss");
-
-        todayStr = sdf.format(today);
-        return todayStr;
-    }
-
-    public static String getSmsDate(Date today) {
-        String todayStr;
-        SimpleDateFormat sdf = new SimpleDateFormat("MM月dd日HH:mm");
-
-        todayStr = sdf.format(today);
-        return todayStr;
-    }
-
+    /** 
+    * [中]
+    * @param startDate
+    * @param endDate
+    * @param format
+    * @return           [中]设定文件 
+    */
     public static String formatTimeRange(Date startDate, Date endDate,
             String format) {
         if ((endDate == null) || (startDate == null)) {
@@ -748,7 +792,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取系统日期的前一天日期，返回Date
+     *[中] 获取系统日期的前一天日期，返回Date
      * 
      * @return
      */
@@ -759,7 +803,7 @@ public class DateUtil {
     }
 
     /**
-     * 获得指定时间当天起点时间
+     *[中] 获得指定时间当天起点时间
      * 
      * @param date
      * @return
@@ -782,7 +826,7 @@ public class DateUtil {
     }
 
     /**
-     * 判断参date上min分钟后，是否小于当前时间
+     *[中] 判断参date上min分钟后，是否小于当前时间
      * 
      * @param date
      * @param min
@@ -794,7 +838,7 @@ public class DateUtil {
     }
 
     /**
-     * 判断是否早于当前时间
+     *[中] 判断是否早于当前时间
      * 
      * @param date
      *            要比较时间
@@ -807,7 +851,7 @@ public class DateUtil {
     }
 
     /**
-     * 判断是否晚于当前时间
+     *[中] 判断是否晚于当前时间
      * 
      * @param date
      *            要比较时间
@@ -834,7 +878,7 @@ public class DateUtil {
     }
 
     /**
-     * 计算时间差
+     *[中] 计算时间差
      * 
      * @param dBefor
      *            首日
@@ -857,7 +901,7 @@ public class DateUtil {
     }
 
     /**
-     * 加减天数
+     *[中] 加减天数
      * 
      * @param date
      * @return Date
@@ -871,7 +915,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取传入时间当前小时
+     *[中] 获取传入时间当前小时
      * 
      * @param date
      * @return int
@@ -883,7 +927,7 @@ public class DateUtil {
     }
 
     /**
-     * 获取传入时间当前分钟
+     *[中] 获取传入时间当前分钟
      * 
      * @param date
      * @return int
@@ -895,7 +939,7 @@ public class DateUtil {
     }
 
     /**
-     * 日期格式化,针对日期的秒表示形式 by zengzhuo
+     *[中] 日期格式化,针对日期的秒表示形式 by zengzhuo
      */
     public static String format(long second, String format) {
         if (format == null)
@@ -910,7 +954,7 @@ public class DateUtil {
     }
 
     /**
-     * Date转为1970
+     *[中] Date转为1970
      * 
      * @param time
      * @return
@@ -920,7 +964,7 @@ public class DateUtil {
     }
 
     /**
-     * 根据传入的日期,取得该日期24点的日期串,精确到小时
+     *[中] 根据传入的日期,取得该日期24点的日期串,精确到小时
      * 
      * @param date
      *            需要得到24时间点的日期
@@ -945,7 +989,7 @@ public class DateUtil {
     }
 
     /**
-     * 根据传入的日期,取得该日期24点的日期串,精确到小时
+     *[中] 根据传入的日期,取得该日期24点的日期串,精确到小时
      * 
      * @param millis
      *            需要得到24时间点的日期
@@ -956,7 +1000,7 @@ public class DateUtil {
     }
 
     /**
-     * 根据传入的日期,取得该日期24点的日期串,精确到小时
+     *[中] 根据传入的日期,取得该日期24点的日期串,精确到小时
      * 
      * @param second
      * @return long[]
@@ -972,7 +1016,7 @@ public class DateUtil {
     }
 
     /**
-     * 得到指定日期的零点零分零秒 返回表示秒数的long型数值
+     *[中] 得到指定日期的零点零分零秒 返回表示秒数的long型数值
      */
     public static long getBeginOfDay(long second) {
         long[] l = DateUtil.get24TimesArrOfDay(second);
@@ -980,7 +1024,7 @@ public class DateUtil {
     }
 
     /**
-     * 得到指定日期的23点59分59秒
+     *[中] 得到指定日期的23点59分59秒
      */
     public static long getEndOfDay(long second) {
         long d = second * 1000;

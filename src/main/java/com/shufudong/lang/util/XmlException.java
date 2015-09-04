@@ -1,6 +1,6 @@
 package com.shufudong.lang.util;
 
-import com.shufudong.lang.exception.ChainedRuntimeException;
+import com.shufudong.lang.exception.BaseRuntimeException;
 
 /** 
  * @ClassName:   [中]XmlException 
@@ -8,7 +8,7 @@ import com.shufudong.lang.exception.ChainedRuntimeException;
  * @author       [中]ShuFuDong
  * @date         [中]2015年8月31日 上午12:12:24 
  */
-public class XmlException extends ChainedRuntimeException {
+public class XmlException extends BaseRuntimeException {
     
     private static final long serialVersionUID = -1732866460475427633L;
     
@@ -26,35 +26,57 @@ public class XmlException extends ChainedRuntimeException {
     
     public static final String XML_TRANSFORM_ERROR = "xml.transform.error";
     
-    /** 
-     * [中]构造一个空的异常.
-     */
-     public XmlException() {
-         super();
-     }
-     
-     /** 
+    /**
      * [中]构造一个异常, 指明异常的详细信息.
-     * @param message [中]详细信息
+     * 
+     * @param message
+     *            [中]详细信息
      */
-     public XmlException(String message) {
-         super(message);
-     }
-     
-     /** 
+    public XmlException(String message) {
+        super(message);
+    }
+
+    /**
      * [中]构造一个异常, 指明引起这个异常的起因.
-     * @param cause   [中]异常的起因
+     * 
+     * @param message
+     *            [中]详细信息
+     * @param cause
+     *            [中]异常的起因
      */
-     public XmlException(Throwable cause) {
-         super(cause);
-     }
-     
-     /** 
-     * [中]构造一个异常, 指明引起这个异常的起因.
-     * @param message [中]详细信息
-     * @param cause   [中]异常的起因
-     */
-     public XmlException(String message, Throwable cause) {
-         super(message, cause);
-     }
+    public XmlException(String message, String code,
+            Throwable cause) {
+        super(message, code, cause);
+    }
+
+    /** 
+    * [中]构造一个异常
+    * @param rise           [中]对象类
+    * @param code           [中]错误编码
+    * @param name           [中]错误名
+    * @param arguments      [中]错误信息参数数组
+    */
+    public XmlException(Class<?> rise, String code, String name,
+            Object[] arguments) {
+        super(rise, code, name, arguments);
+    }
+    
+    /** 
+    * [中]构造一个异常
+    * @param rise           [中]对象类
+    * @param code           [中]错误编码
+    * @param arguments      [中]错误信息参数数组
+    */
+    public XmlException(Class<?> rise,String code,Object[] arguments){
+        super(rise,code,null,arguments);
+    }
+
+    /** 
+    * [中]构造一个异常
+    * @param rise       [中]对象类
+    * @param e          [中]异常起因
+    */
+    public XmlException(Class<?> rise,Throwable e){
+        super(rise,e);
+    }
 }
