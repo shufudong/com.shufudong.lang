@@ -1,30 +1,17 @@
-package com.shufudong.lang.util;
+package com.shufudong.lang.exception;
 
 import com.shufudong.lang.exception.BaseRuntimeException;
 
 /** 
- * @ClassName:   [中]XmlException 
- * @Description: [中]代表处理xml时抛出的异常.
+ * @ClassName:   [中]CloneNotSupportedException 
+ * @Description: [中]当<code>ObjectUtil.clone</code>方法被调用时，如果被复制的对象不支持该操作，则抛出该异常。
+ * <p>注意，和<code>java.lang.CloneNotSupportedException</code>不同，该异常从<code>RuntimeException</code>派生。</p>
  * @author       [中]ShuFuDong
- * @date         [中]2015年8月31日 上午12:12:24 
+ * @date         [中]2015年2月8日 下午11:00:03 
  */
-public class XmlException extends BaseRuntimeException {
-    
-    private static final long serialVersionUID = -1732866460475427633L;
-    
-    public static final String XML_PAYLOAD_EMPTY = "xml.payload.empty";
-    
-    public static final String XML_ENCODE_ERROR = "xml.encoding.invalid";
-    
-    public static final String FILE_NOT_FOUND = "xml.file.not.found";
-    
-    public static final String XML_PARSE_ERROR = "xml.parse.error";
-    
-    public static final String XML_READ_ERROR = "xml.read.error";
-    
-    public static final String XML_VALIDATE_ERROR = "xml.validate.error";
-    
-    public static final String XML_TRANSFORM_ERROR = "xml.transform.error";
+public class CloneNotSupportedException extends BaseRuntimeException {
+
+    private static final long serialVersionUID = -4325043378708941044L;
     
     /**
      * [中]构造一个异常, 指明异常的详细信息.
@@ -32,7 +19,7 @@ public class XmlException extends BaseRuntimeException {
      * @param message
      *            [中]详细信息
      */
-    public XmlException(String message) {
+    public CloneNotSupportedException(String message) {
         super(message);
     }
 
@@ -44,7 +31,7 @@ public class XmlException extends BaseRuntimeException {
      * @param cause
      *            [中]异常的起因
      */
-    public XmlException(String message, String code,
+    public CloneNotSupportedException(String message, String code,
             Throwable cause) {
         super(message, code, cause);
     }
@@ -56,7 +43,7 @@ public class XmlException extends BaseRuntimeException {
     * @param name           [中]错误名
     * @param arguments      [中]错误信息参数数组
     */
-    public XmlException(Class<?> rise, String code, String name,
+    public CloneNotSupportedException(Class<?> rise, String code, String name,
             Object[] arguments) {
         super(rise, code, name, arguments);
     }
@@ -67,16 +54,16 @@ public class XmlException extends BaseRuntimeException {
     * @param code           [中]错误编码
     * @param arguments      [中]错误信息参数数组
     */
-    public XmlException(Class<?> rise,String code,Object[] arguments){
+    public CloneNotSupportedException(Class<?> rise,String code,Object[] arguments){
         super(rise,code,null,arguments);
     }
-
+    
     /** 
     * [中]构造一个异常
     * @param rise       [中]对象类
-    * @param e          [中]异常起因
+    * @param e          [中]异常的起因
     */
-    public XmlException(Class<?> rise,Throwable e){
-        super(rise,e);
+    public CloneNotSupportedException(Class<?> rise,Throwable cause){
+        super(rise,cause);
     }
 }

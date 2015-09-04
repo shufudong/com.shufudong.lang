@@ -4675,18 +4675,6 @@ public class StringUtil {
         return d[n][m];
     }
 
-    /**
-     * 取得最小数。
-     * 
-     * @param a
-     *            整数1
-     * @param b
-     *            整数2
-     * @param c
-     *            整数3
-     * 
-     * @return 三个数中的最小值
-     */
     private static int min(int a, int b, int c) {
         if (b < a) {
             a = b;
@@ -4698,4 +4686,6 @@ public class StringUtil {
 
         return a;
     }
+
+    /* 生成随机字符串 */
 }

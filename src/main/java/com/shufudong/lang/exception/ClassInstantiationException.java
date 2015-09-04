@@ -1,4 +1,4 @@
-package com.shufudong.lang.util;
+package com.shufudong.lang.exception;
 
 import com.shufudong.lang.exception.BaseRuntimeException;
 
